@@ -1,0 +1,190 @@
+\documentclass[12]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[french]{babel}
+\usepackage{url}
+
+\geometry{letterpaper,margin=2.5cm}
+
+\hypersetup
+{
+    colorlinks = true, linkcolor = blue, citecolor = blue, urlcolor = blue,
+}
+
+%\def\labelitemi{$\bullet$}
+
+\title{ECL 707 (Maîtrise) - ECL 807 (Doctorat) \\ École d'été en modélisation de la biodiversité\\Orford Musique -- 20--24 août 2018}
+\date {}
+\author[1]{Dominique Gravel}
+\author[1]{Guillaume Blanchet}
+\author[2]{Matthew Talluto}
+\affil[1]{Départment de biologie, Université de Sherbrooke}
+\affil[2]{Leibniz-Institute of freshwater ecology and inland fisheries}
+
+\begin{document}
+
+	\maketitle
+
+	%-----------------------------
+	\section*{Objectif général}
+
+  La modélisation de la biodiversité fait maintenant partie intégrante du
+  travail des biologistes, et ce autant en écologie fondamentale, en biologie de
+  la conservation, qu'en biologie évolutive. Au terme de ce cours, l'étudiant
+  sera en mesure d'utiliser différentes approches de modélisation de la
+  biodiversité et de comprendre les limites de diverses données écologiques.
+  L'étudiant sera aussi en mesure de comprendre les bases de diverses approches
+  utilisées pour prédire différentes facettes de la biodiversité (p.ex. la
+  distribution d'espèces, la structure de réseaux écologique) et de les utiliser
+  pour ses propres travaux de recherche. Finalement, l'étudiant sera aussi en
+  mesure d'appliquer les approches discutées pendant le cours pour identifier
+  les enjeux de biodiversité d'une région donnée et assister la décision.
+
+  %-----------------------------
+	\section*{Objectifs spécifiques}
+
+	Au terme de ce cours, l'étudiant sera en mesure :
+
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$\bullet$}
+
+  \item  Utiliser différentes techniques de modélisation de la biodiversité (statistiques, équations différentielles, simulations stochastiques)
+
+  \item Utiliser des sorties de modèles de changement climatique pour la simulation de la biodiversité
+
+  \item Réaliser des scénarios de biodiversité basés sur l'analyse de données empiriques ;
+
+  \item Critiquer les méthodes de simulation de scénarios
+
+  \item Évaluer les sources d'incertitude dans la projection de la biodiversité
+
+	\end{itemize}
+
+	%-----------------------------
+	\section*{Prérequis}
+
+	La réalisation de ce cours requiert une connaissance intermédiaire de la
+	programmation scientifique.
+
+  %-----------------------------
+
+  \section*{Approche pédagogique}
+
+Les séances seront constituées de courtes leçons magistrales sur des notions de bases, entre-coupées d’exercices spécifiques destinés à pratiquer les éléments enseignés. Les séances seront complétées par l'analyse de problèmes appliqués qui font appel aux modèles discutés. Les séances seront complémentés de discussions sur les caractéristiques des approches présentées et de leur utilité en milieu pratique. Les étudiants seront invités à réaliser un projet intégrateur d’analyse de données sur l’ensemble de la semaine de formation intensive.
+
+L’ensemble du matériel du cours sera disponible sur un dépôt git à l’adresse :
+
+https://github.com/EcoNumUdS/ScenariosBiodiv
+
+
+	%-----------------------------
+	\section*{Contenu}
+
+  \subsection*{Jour 1 -- Survol des approaches}
+  \subsubsection*{Matin -- Introduction}
+  \begin{itemize}
+    \item Approches phénoménologiques versus mécanistiques
+    \item Utilisation des scénarios par les décideurs
+    \begin{itemize}
+      \item Survol des outils utilisés (DGVM, Forest Gap Models, SDM, SAR ...)
+      \item Exemples de scénarios
+    \end{itemize}
+    \item Techniques de base de modélisation (ODE, stochastique, statistique)
+    \item Un exemple : le projet QUICC-FOR
+  \end{itemize}
+
+  \subsubsection*{Après-midi -- Scénarios de changements anthropogéniques}
+  \begin{itemize}
+    \item Modèles climatiques
+    \item Exploitation des ressources
+  \end{itemize}
+  \subsubsection*{Exercice}
+  Simulations de migration de la forêt tempérée
+
+  \subsubsection*{Séminaire (optionel)}
+  Exercices dirigés d'algorithmique
+  \begin{itemize}
+    \item ODE
+    \item Simulation stochastiques
+  \end{itemize}
+
+  \subsection*{Jour 2 -- Modèles spatiaux et de changements d'utilisation du territoire}
+  \subsubsection*{Matin -- Dynamique spatiale}
+  \begin{itemize}
+    \item Simulations stochastiques : Chaines de Markov
+    \item Théorie des métapopulations
+    \item Automates cellulaires
+  \end{itemize}
+
+  \subsubsection*{Après-midi -- Connectivité}
+  \begin{itemize}
+    \item Outils de caractérisation de la connectivité du paysage
+    \item Exploitation de données libres d'occupation du paysage
+  \end{itemize}
+  \subsubsection*{Exercice}
+  Co-dynamique spatiale de la forêt et des communautés aviaires
+
+  \subsubsection*{Séminaire}
+  Marie-Josée Fortin, University of Toronto
+
+  \subsection*{Jour 3 -- Distribution de la biodiversité et changement climatique}
+  \subsubsection*{Matin -- Modèles de distribution d'espèces (SDMs)}
+  \begin{itemize}
+    \item Théorie
+    \item MaxEnt
+    \item BioMod et ensemble forecasting
+  \end{itemize}
+  \subsubsection*{Après-midi -- Exploitation de données libres de biodiversité}
+  \subsubsection*{Exercice}
+  Carte de répartition de la richesse et de l'incertitude de la diversité d'oiseaux pour le sud du Québec
+
+  \subsubsection*{Séminaire}
+  Anne Bruneau, Université de Montréal
+
+  \subsection*{Jour 4 -- Modèles de communauté}
+  \subsubsection*{Matin -- Modèles de distribution d'espèces conjoints (JSDMs)}
+  \begin{itemize}
+    \item Théorie
+    \item Utilisation du package R \texttt{HMSC}
+  \end{itemize}
+  \subsubsection*{Après-midi -- Dynamique des réseaux, extinctions et exploitation des écosystèmes}
+  \begin{itemize}
+    \item Analyse de robustesse
+    \item Dynamique d'écosystème
+  \end{itemize}
+  \subsubsection*{Exercice}
+  \begin{itemize}
+    \item Carte de répartition de la richesse et de l'incertitude de la diversité d'oiseaux pour le sud du Québec (revisité)
+    \item Dynamique spatiale de réseaux écologiques
+  \end{itemize}
+
+  \subsubsection*{Séminaire}
+  Anouk Simard, Gouvernement du Québec
+
+  \subsection*{Jour 5 -- Aide à la décision}
+  \subsubsection*{Matin -- Outils d'aide à la décision}
+  \begin{itemize}
+    \item Évaluation de l'incertitude
+    \item Sensibilité structurelle
+    \item Optimisation
+  \end{itemize}
+  \subsubsection*{Après-midi}
+  \begin{itemize}
+    \item Présentation d'étudiants
+    \item Exercices intégrateurs : optimisation d'un réseau d'aire protégées pour maximiser la conservation des communautés aviaires
+  \end{itemize}
+
+	%-----------------------------
+	\section*{Évaluation}
+
+  L’évaluation portera sur un projet intégrateur à réaliser seul ou en en
+  équipe. Une présentation du projet et du modèle sera réalisée au cours de la
+  semaine et un rapport accompagné du script utilisé pour réaliser les analyses
+  sera remis pour le \textbf{\textcolor{red}{31 décembre 2018}}. Les étudiants
+  auront l’opportunité d’utiliser leurs propres données s’ils le souhaitent ou
+  pourront définir un projet sur des données en accès libre.
+
+\end{document}

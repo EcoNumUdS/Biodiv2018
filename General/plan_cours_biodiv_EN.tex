@@ -1,0 +1,203 @@
+\documentclass[12]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[french]{babel}
+\usepackage{url}
+
+\geometry{letterpaper,margin=2.5cm}
+
+\hypersetup
+{
+    colorlinks = true, linkcolor = blue, citecolor = blue, urlcolor = blue,
+}
+
+%\def\labelitemi{$\bullet$}
+
+\title{ECL 707 (MSc) - ECL 807 (PhD) \\ Summer School in Biodiveristy Modelling\\Orford Musique -- August 20--24, 2018}
+\date {}
+\author[1]{Dominique Gravel}
+\author[1]{F. Guillaume Blanchet}
+\author[2]{Matthew Talluto}
+\affil[1]{Départment de biologie, Université de Sherbrooke}
+\affil[2]{Leibniz-Institute of freshwater ecology and inland fisheries}
+
+\begin{document}
+
+	\maketitle
+
+	%-----------------------------
+	\section*{General Objective}
+
+  Biodiversity modelling is now an integral part of the work of biologists in
+  many subfields of biology from fundamental ecology to evolutionary biology and
+  conservation biology. By the end of this course, the student will be able to
+  use different biodiversity modelling techniques and understand the limits of
+  different types of ecological data. The student will also be able to
+  understand the basis of the different approaches used to model and predict
+  different facets of the biodiversity (e.g. species distribution or trophic
+  networks structure) and to use these approaches in his own projects. Finally,
+  the student will also be able to apply the different techniques discussed
+  during the course to decide and inform on the structure of biodiversity of a
+  particular region.
+
+	%-----------------------------
+	\section*{Specific Objectives}
+
+	By the end of this course, the student will :
+
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$\bullet$}
+
+  \item be able to use different biodiversity modelling techniques (statistics,
+  differential equations, stochastic simulations)
+
+  \item be able to use outputs of climate change models for biodiversity
+  modelling
+
+  \item be able to devise various biodiversity scenarios based on the analysis
+  of empirical data
+
+  \item have developed critical thinking about the methods used in different
+  biodiversity scenarios
+
+  \item be able to evaluate the source of uncertainty in predictions of
+  biodiversity
+
+	\end{itemize}
+
+	%-----------------------------
+	\section*{Prerequisites}
+
+  To follow this course, intermediate knowledge of scientific programming is
+  required.
+
+  %-----------------------------
+
+  \section*{Pedagogical Approach}
+
+  For each topic covered, short lectures on the basic theory will be separated
+  by practical sessions designed to apply what was learned in the lecture. The
+  sections will end with an exercise highlighting the different aspects of the
+  topic covered. Each topic will be complemented by discussions on the
+  characteristics of the approaches discussed and their use in practice.
+  Students will have a data analysis project to complete that will encompass all
+  aspects of what has been seen during the summer school.
+
+  All the course material will be made available on the following git
+  repository:
+
+  https://github.com/EcoNumUdS/ScenariosBiodiv
+
+	%-----------------------------
+	\section*{Topics}
+
+  \subsection*{Day 1}
+  \subsubsection*{Morning -- Introduction}
+  \begin{itemize}
+    \item Phenomenological vs mecanistic approches
+    \item Use of biodiversity scenarios for decision makers
+    \begin{itemize}
+      \item Overview of tools used (DGVM, Forest Gap Models, SDM, SAR ...)
+      \item Examples of biodiversity scenarios
+    \end{itemize}
+    \item Basis of modelling (ODE, stochastic, statistics)
+    \item An example : The QUICC-FOR project
+  \end{itemize}
+
+  \subsubsection*{Afternoon -- Anthropogenic Change Scenarios}
+  \begin{itemize}
+    \item Climatic models
+    \item Resource selection models
+  \end{itemize}
+  \subsubsection*{Exercice}
+  Temperate forest migration simulations
+
+  \subsubsection*{Seminar (optional)}
+  Directed exercises on algorithmic
+  \begin{itemize}
+    \item ODE
+    \item Stochastic simulations
+  \end{itemize}
+
+  \subsection*{Day 2 -- Spatial and Land Use Change Models}
+  \subsubsection*{Morning -- Spatial dynamic}
+  \begin{itemize}
+    \item Stochastic simulations : Markov chains
+    \item Metapopulation theory
+    \item Cellular automata
+  \end{itemize}
+
+  \subsubsection*{Afternoon -- Connectivity}
+  \begin{itemize}
+    \item Landscape connectivity tools
+    \item Using landscape occupations open data
+  \end{itemize}
+  \subsubsection*{Exercice}
+  Spatial co-dynamic of forests and avian communities
+
+  \subsubsection*{Seminar}
+  Marie-Josée Fortin, University of Toronto
+
+  \subsection*{Day 3 -- Biodiversity Distribution and Climate Change}
+  \subsubsection*{Morning -- Species Distribution Models (SDMs)}
+  \begin{itemize}
+    \item Théorie
+    \item MaxEnt
+    \item BioMod and ensemble forecasting
+  \end{itemize}
+  \subsubsection*{Afternoon -- Using Open Data on Biodiveristy}
+  \subsubsection*{Exercice}
+  Mapping bird richness and uncertainty in the south of Québec
+
+  \subsubsection*{Seminar}
+  Anne Bruneau, Université de Montréal
+
+  \subsection*{Day 4 -- Community Models}
+  \subsubsection*{Morning -- Joint Species Distribution Models (JSDMs)}
+  \begin{itemize}
+    \item Theory
+    \item Using the \texttt{HMSC} R package
+  \end{itemize}
+  \subsubsection*{Afternoon -- Networks Dynamics, Extinctions and Ecosystem Use}
+  \begin{itemize}
+    \item Robustness Analysis
+    \item Ecosystem Dynamics
+  \end{itemize}
+  \subsubsection*{Exercice}
+  \begin{itemize}
+    \item Mapping bird richness and uncertainty in the south of Québec
+    (revisited)
+    \item Spatial dynamics of ecological networks
+  \end{itemize}
+
+  \subsubsection*{Seminar}
+  Anouk Simard, Gouvernement du Québec
+
+  \subsection*{Day 5 -- Decision Making}
+  \subsubsection*{Morning -- Tools for Decision Makers}
+  \begin{itemize}
+    \item Evaluation of uncertainty
+    \item Structural sensibility
+    \item Optimization
+  \end{itemize}
+  \subsubsection*{Afternoon}
+  \begin{itemize}
+    \item Student's presentation
+    \item Integrative exercises : optimizing a network of protected areas to
+    maximize avian communities conservation
+  \end{itemize}
+
+	%-----------------------------
+	\section*{Evaluation}
+
+  The evaluation will be based on a class project to complete alone or in a
+  team. A presentation of the project and of the model use will be made during
+  the week. A final report, including the code used to perform all analyses,
+  will need to be handed in at the latest by \textbf{\textcolor{red}{December
+  31, 2018}}. Students will have the opportunity to use their own data or open
+  access data to carry out their project.
+
+\end{document}
